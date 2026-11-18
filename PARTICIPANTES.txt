@@ -2,18 +2,17 @@ GLOBAL SOLUTION 2026.2
 FIAP | Ciência da Computação
 Disciplina: Cross-Platform Application Development
 Projeto: Ponto Certo SP
-Modalidade: individual
 
 Nome: Matheus Costa Cutrim
 RM: 568087
 Turma: 2CCPR
 Professor: Rodrigo Moraes
 
-Divisão do trabalho: Matheus é o único integrante e responsável pela
+Divisão do trabalho: desenvolvido individualmete, fui responsável pela
 apresentação da solução, pela validação em celular e pela entrega.
 O escopo individual cobre a interface React Native, a reutilização da
 integração com a SPTrans, a ordenação das paradas pelo GPS, o aviso de
 chegada, os testes e a documentação.
 
 A adaptação mobile foi preparada com apoio de IA. Na apresentação,
-o aluno deve saber explicar a implementação e demonstrá-la em celular real.
+foi apresentada a implementação e demonstração em celular real.
