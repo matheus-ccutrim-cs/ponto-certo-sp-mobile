@@ -1,0 +1,14 @@
+{
+  "expo": {
+    "name": "Ponto Certo SP",
+    "slug": "ponto-certo-sp-mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "plugins": [
+      ["expo-location", {
+        "locationWhenInUsePermission": "Use sua localização para ordenar os pontos de ônibus por distância."
+      }],
+      "expo-notifications"
+    ]
+  }
+}

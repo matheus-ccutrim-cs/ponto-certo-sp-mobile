@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ponto Certo SP | Próximos ônibus</title>
+  <link rel="stylesheet" href="/style.css">
+  <script type="module" src="/app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#busca">Pular para a busca</a>
+  <header>
+    <div class="wrap masthead">
+      <div class="brand"><span class="brand-icon" aria-hidden="true">●</span> Ponto Certo SP</div>
+      <span>Ônibus municipais de São Paulo</span>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section id="busca" class="hero" aria-labelledby="titulo">
+      <div class="hero-copy">
+        <h1 id="titulo">Quando chega<br>meu ônibus?</h1>
+        <p>Encontre seu ponto e veja as próximas chegadas.</p>
+        <p id="demo" class="demo" hidden>Simulação local · dados fictícios</p>
+        <form id="search">
+          <label for="term">Nome ou endereço do ponto</label>
+          <div class="search-row">
+            <input id="term" type="search" placeholder="Ex.: Paulista" required minlength="2" maxlength="100">
+            <button type="submit">Buscar pontos</button>
+          </div>
+        </form>
+      </div>
+      <div class="route" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+    </section>
+
+    <div class="dashboard">
+      <aside class="sidebar" aria-label="Seleção de ponto">
+        <section class="panel" aria-labelledby="results-title">
+          <h2 id="results-title">Resultados da busca</h2>
+          <p id="search-status" class="muted" role="status">Busque um ponto para começar.</p>
+          <ul id="results" class="stops"></ul>
+        </section>
+        <section class="panel" aria-labelledby="favorites-title">
+          <h2 id="favorites-title">Pontos salvos</h2>
+          <p id="favorites-status" class="muted" role="status">Salve os pontos que você consulta com frequência.</p>
+          <ul id="favorites" class="stops"></ul>
+        </section>
+      </aside>
+
+      <section class="panel arrivals" aria-labelledby="arrivals-title">
+        <div class="panel-heading">
+          <div>
+            <h2 id="arrivals-title" tabindex="-1">Próximas chegadas</h2>
+            <p id="stop-address" class="muted" hidden></p>
+          </div>
+          <button type="button" id="favorite" class="secondary" aria-pressed="false" hidden>Salvar ponto</button>
+        </div>
+        <div id="controls" class="controls" hidden>
+          <label><input type="checkbox" id="accessible"> Só veículos acessíveis</label>
+          <button type="button" class="secondary" id="refresh">Atualizar agora</button>
+        </div>
+        <p id="arrival-status" class="muted" role="status">Selecione um ponto para consultar os ônibus.</p>
+        <ul id="arrivals" class="arrival-list"></ul>
+      </section>
+    </div>
+  </main>
+
+  <footer class="wrap">
+    <a href="https://www.sptrans.com.br/desenvolvedores/api-do-olho-vivo-guia-de-referencia/documentacao-api">Fonte dos dados: SPTrans · API Olho Vivo</a>
+    <span>FIAP · Application Development · GS 2026.2</span>
+  </footer>
+</body>
+</html>
